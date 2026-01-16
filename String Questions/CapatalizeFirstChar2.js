@@ -8,7 +8,7 @@ function CapatalizeFirstChar(str){
             result+=ch;
             capatalizeNext = true;
         }
-        else if(capatalize){
+        else if(capatalizeNext){
             result+=ch.toUpperCase();
             capatalizeNext = false;
         }

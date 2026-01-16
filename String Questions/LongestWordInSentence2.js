@@ -2,7 +2,7 @@ function LongestWord(str){
     let longest = "";
     let current = "";
 
-    for(let i=0; i<str.length-1;i++ ){
+    for(let i=0; i<str.length;i++ ){
         let ch = str[i];
 
         if(ch !== " "){

@@ -1,15 +1,12 @@
 function Duplicate(str){
      if(str.length==1) return str;
-     let count = {};
+     let seen = {};
      let arr ="";
      for(let char of str){
-        count[char] = (count[char]||0)+1;
-     }
-
-     for(let char of str){
-        if(count[char] && count[char]==1){
-           arr+=char
-        }
+      if(!seen[char]){
+         seen[char]=true;
+         arr+=char;
+      }
      }
 
      return arr;
